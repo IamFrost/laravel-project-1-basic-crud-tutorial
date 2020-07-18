@@ -7,6 +7,15 @@
     <title>Create New Book</title>
 </head>
 <body>
-
+    <form action={{ route('book.store') }}  method="post">
+    @csrf
+        <input type="text" name="name" placeholder="Book name">
+        <br>
+        <input type="text" name="author_name" placeholder="Author name">
+        <br>
+        <input type="date" name="publish_date">
+        <br>
+        <button>Submit</button>
+    </form>
 </body>
 </html>

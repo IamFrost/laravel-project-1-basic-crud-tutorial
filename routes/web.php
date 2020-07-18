@@ -102,3 +102,8 @@ Route::delete('author/delete/{id}', 'AuthorController@destroy')->name('author.de
 
 
 Route::get('book/create', 'BookController@create')->name('book.create');
+Route::post('book/store', 'BookController@store')->name('book.store');
+Route::get('books', 'BookController@index')->name('book.index');
+Route::get('book/{id}/edit', 'BookController@edit')->name('book.edit');
+Route::put('book/{id}/edit', 'BookController@update')->name('book.update');
+Route::delete('book/delete/{id}', 'BookController@destroy')->name('book.destroy');
